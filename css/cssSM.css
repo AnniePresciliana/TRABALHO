@@ -1,45 +1,80 @@
 table {
     border-collapse: collapse;
-    
-     margin: auto;
+    margin: auto;
     width: 60%;
-    border: 3px solid #73AD21;
+    border: 3px solid blue;
     padding: 10px;
 }
 
 
-table, th, td {
-   border: 1px solid red;
-}
 
-
-
-p{
-    font-family: "Times New Roman", Times, serif;
-}
-
-fieldset{
-    font-size: 20px;
-    background: color:gray;
-    
-}
-
-h1{
-     margin: auto;
-    width: 60%;
-    border: 3px solid #73AD21;
-    padding: 10px;
-}
-
-h3{
-    color font: magenta; 
-}
-
-legend{
+table,th, td {
+   border: 3px solid blue;
     font-size: 30px;
 }
 
 
-body{
-    background: color:rgba(36, 163, 154, 0.79);
+
+#form{
+    background-color: #86b4fd;
+    border: 1px;
+    font-size: 20px;
 }
+
+p{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    font-color:blue;
+    font-variant-caps: all-small-caps;
+}
+
+fieldset{
+    margin: auto;
+    width: 60%;
+    border: 3px solid rgba(21, 55, 119, 0.99);
+    padding: 10px;
+    font-size: 25px;
+    background: color:rgb(83, 115, 221);
+    
+    
+}
+
+h1{
+   
+    border: 4px solid #370acc;
+    padding: 10px;
+    align-items: center;    
+}
+
+
+
+legend{
+    font-size: 25px;
+    font-family: serif; 
+    font-color:#9300ff;
+    font-weight: bold;
+}
+
+
+body{
+    border: 7px solid blue;
+}
+
+#logo{
+    display: block;
+
+    margin-left: auto;
+
+    margin-right: auto 
+}
+
+#ajuda{
+    text-align-last: center;
+}
+
+#rodape{
+    text-align: center;
+    border: 2px solid #a3a298;
+    font-color:#a700ff;
+}
+
