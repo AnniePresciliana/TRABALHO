@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Fornecedor</title>
+   
+    
+    
+</head>
+<body>
+    
+   
+<form action="" id="form" border="0">
+
+                <label>Nome</label>
+                     <input type="text" name="utente[]" id="nome" maxlength="150">
+                <label>Telefone</label>
+                     <input type="text" name="tel[]" id ="tel" maxlenght="10" >
+                <label>Data de cadastro</label>
+                     <input type="text" name="dta[]" id="dta" maxlength="10" placeholder="yyyy-mm-dd">
+                <label>Codigo</label>
+                    <input type="text" name="cod[]" id="cod" maxlength="10">
+                <label>CNPJ</label>       
+                          
+                    <input type="text" name="cnpj[]" id="cnpj" maxlength="30">
+                   <input type="submit" id="add_field" value="Adicionar">
+          
+</form> 
+ 
+    
+    <div id="table">
+			<table id="tabela-fornecedores" >
+				
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>Telefone</th>
+						<th>Data de cadastro</th>
+						<th>Codigo</th>
+                        <th>CNPJ </th>
+                         <th>AÇÃO </th>
+						
+						
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+
+		
+</div>
+    <script src="js/FornecedorDAO.js"></script>
+       <script src="js/TableControllerFornecedor.js"></script>
+    <script src="js/FornecedorController.js"></script>
+   
+      
+    
+</html>
