@@ -25,9 +25,9 @@ var Index = {
         var contas = {};
         contas.nome = form.nome.value;
         contas.valor = form.valor.value;
-        contas.dta = form.dta.value;
+        contas.data = form.dta.value;
         contas.idstatus = form.idstatus.value;
-        contas.formapg =form.formapg.value;
+        contas.formapg = form.formapg.value;
         if (ContasDAO.save(contas) == ContasDAO.NEW) {
            TableController.addItem(contas,Index.edit,Index.delete);
         } else{ 
@@ -60,8 +60,8 @@ var Index = {
 				var form = document.getElementById('form');
                     form.nome.value = conta.nome;
                     form.valor.value =  conta.valor;
-                    form.dta.value =  conta.dta;
-                    form.idstatus.value =  conta.idstatus;
+                    form.dta.value =  conta.data;
+                    form.idstatus.value = conta.idstatus;
                     form.formapg.value = conta.formapg;
                     
             }
