@@ -55,7 +55,7 @@ var Index = {
  
         	edit: function(nome) {
 		if(confirm("Você deseja editar a conta " + nome + " ?")) {
-			var conta = ContaDAO.get(nome);
+			var conta = ContasDAO.get(nome);
 			if (conta) {
 				var form = document.getElementById('form');
                     form.nome.value = conta.nome;
@@ -72,7 +72,7 @@ var Index = {
 
 delete: function(nome, element) {
 		if(confirm("Você deseja deletar a conta " + nome + " ?")) {
-			var conta = ContaDAO.get(nome);
+			var conta = ContasDAO.get(nome);
 			if (conta) {
 				if(ContasDAO.delete(nome)) {
 					var row = element.parentNode.parentNode;
