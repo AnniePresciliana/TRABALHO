@@ -27,7 +27,7 @@ var Index = {
         contas.valor = form.valor.value;
         contas.data = form.dta.value;
         contas.idstatus = form.idstatus.value;
-        contas.formapg = form.formapg.value;
+        contas.formapg =form.formapg.value;
         if (ContasDAO.save(contas) == ContasDAO.NEW) {
            TableController.addItem(contas,Index.edit,Index.delete);
         } else{ 
@@ -46,23 +46,23 @@ var Index = {
         
         listContas: function () {
             Index.setTable();
-            var contasList = ContasDAO.retrieve();
-           if (contasList && contasList.length) {
-			TableController.addList(contasList, Index.edit, Index.delete);
+            var contaList = ContasDAO.retrieve();
+           if (contaList && contaList.length) {
+			TableController.addList(contaList, Index.edit, Index.delete);
 		}
 	},
     //editar os campos do usuario
  
         	edit: function(nome) {
-		if(confirm("Você deseja editar a conta " + nome + " ?")) {
+		if(confirm("Você deseja editar a coonta " + nome + " ?")) {
 			var conta = ContasDAO.get(nome);
 			if (conta) {
 				var form = document.getElementById('form');
                     form.nome.value = conta.nome;
-                    form.valor.value =  conta.valor;
+                    form.tel.value =  conta.valor;
                     form.dta.value =  conta.data;
-                    form.idstatus.value = conta.idstatus;
-                    form.formapg.value = conta.formapg;
+                    form.cod.value =  conta.idstatus;
+                    form.cnpj.value = conta.formapg;
                     
             }
         }
